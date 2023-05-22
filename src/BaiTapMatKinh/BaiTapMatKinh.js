@@ -6,14 +6,17 @@ import DetailGlass from './DetailGlass'
 export default class BaiTapMatKinh extends Component {
   state ={
     GlassesArr : GlassesArr,
-    DetailGlass: GlassesArr
+    DetailGlasses: GlassesArr[0]
   }
+  handleViewDetail = (shoe) => { 
+    this.setState({DetailGlasses: shoe})
+   }
   render() {
     console.log(this.state.GlassesArr);
     return (
       <div>
-        <ListGlass list={this.state.GlassesArr}/> 
-        <DetailGlass />
+        <ListGlass handleViewDetail={this.handleViewDetail} list={this.state.GlassesArr}/> 
+        <DetailGlass detail={this.state.DetailGlasses}/>
       </div>
     )
   }

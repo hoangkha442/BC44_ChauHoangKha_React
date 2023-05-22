@@ -15,7 +15,14 @@
 .bg-dark{
   background-color: rgb(33,37,41) !important;
 }
-
+button{
+  outline: none;
+  border: none;
+  transition: all .5s;
+}
+button:hover{
+  border: 1px solid red;
+}
 /******************** CONTENT ********************/
 .box-header{
   width: 4rem;
@@ -74,10 +81,17 @@
   height: 35%;
   background-color: rgba(253, 189, 143, .8);
 }
-/* 
-.overlay .text p:first-child{
 
-} */
+.ItemGlasses img{
+  width: 100px;
+  height: 50px;
+}
+.ListGlasses{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,80%);
+}
 
 
 
