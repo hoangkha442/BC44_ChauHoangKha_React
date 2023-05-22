@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import BaiTapComponent from './BaiTapComponent/BaiTapComponent';
+import BaiTapMatKinh from './BaiTapMatKinh/BaiTapMatKinh';
+// import BaiTapComponent from './BaiTapComponent/BaiTapComponent';
 
 function App() {
   return (
     <div>
-      <BaiTapComponent/>
+      {/* <BaiTapComponent/> */}
+      <BaiTapMatKinh />
     </div>
   );
 }
